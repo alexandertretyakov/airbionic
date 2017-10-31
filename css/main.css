@@ -115,10 +115,6 @@ body {
 
 /*----------------------------------------------------------------------- Content */
 
-.content {
-    margin-bottom: 70px;
-}
-
 .module--side-panel {
     margin-bottom: 10px;
 }
@@ -257,46 +253,42 @@ body {
     margin-bottom: 20px;
 }
 
-/*-------- first-project */
-
 .module--featured-project {
     padding-top: 5px;
 }
 
-.clause {
+/* -------- Item */
+
+.module--featured-project .item {
     width: 45%;
     float: left;
     padding-left: 20px;
     margin-bottom: 20px;
 }
 
-.clause a {
+.module--featured-project .item a {
     float: left;
     margin-right: 15px;
 }
 
-.clause p {
+.module--featured-project .item p {
     font-weight: bold;
 }
 
-.clause img {
+.module--featured-project .item img {
     display: block;
     border: 1px solid #b3b3b3;
     background: #dddddd;
     padding: 5px;
 }
 
-.clause:after {
+.module--featured-project .item:after {
     content: '';
     display: block;
     clear: both;
 }
 
 /*------------------------------- Column--right*/
-
-.module--side-panel p {
-    margin-bottom: 15px;
-}
 
 .column--right {
     padding: 10px 10px 0 15px;
@@ -340,14 +332,9 @@ body {
     width: 100%;
     height: 68px;
     font-family: Arial, Helvetica, sans-serif;
-    background: #eeeeee;
-    padding: 15px 28px 0 18px;
+    background: url("../img/TM.gif") 30px 28px no-repeat #eeeeee;;
+    padding: 15px 28px 0 75px;
     border-top: 1px solid #d4d4d4;
-}
-
-.footer img {
-    margin: 10px;
-    float: left;
 }
 
 .footer p {
@@ -355,8 +342,6 @@ body {
     margin-top: 20px;
     font-size: 15px;
 }
-
-/*-------- nav-5 */
 
 .nav-5 {
     float: right;
