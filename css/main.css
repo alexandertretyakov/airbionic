@@ -243,7 +243,7 @@ body {
 /*-------- Module: Featured-project */
 
 .module--featured-project {
-    border-top: 1px dashed #a1a1a1;
+    border-top: 1px dotted #a1a1a1;
     clear: both;
 }
 
@@ -291,9 +291,16 @@ body {
 /*------------------------------- Column--right*/
 
 .column--right {
-    padding: 10px 10px 0 15px;
-    color: #6b6b6b;
     width: 195px;
+}
+
+.nav-4 p {
+    margin-bottom: 15px;
+}
+
+.nav-4 {
+    padding: 10px 8px 0 15px;
+    color: #6b6b6b;
     border: 1px solid #d8d8d8;
     border-radius: 5px;
     background-color: #ececec;
