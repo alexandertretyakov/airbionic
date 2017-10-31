@@ -32,7 +32,7 @@ body {
 
 .column {
     float: left;
-    margin-left: 10px;
+    margin: 20px 10px 0 8px;
 }
 
 /*----------------------------------------------------------------------- Header */
@@ -40,7 +40,6 @@ body {
 .header {
     height: 265px;
     background: url("../img/ribbon.jpg") 0 98px no-repeat;
-    margin-bottom: 20px;
 }
 
 .logo {
@@ -50,16 +49,16 @@ body {
 
 .nav-1 {
     float: right;
+    margin: 36px 62px 0 0;
 }
 
 .nav-1 .ref {
     height: 15px;
-    float: right;
-    margin-top: 36px;
-    margin-right: 62px;
+    display: inline-block;
     text-align: right;
     text-decoration: none;
     color: inherit;
+    margin-left: 60px;
 }
 
 .nav-1 .ref--home {
@@ -85,16 +84,16 @@ body {
 .nav-1:after {
     content: '';
     display: block;
-    clear: right;
+    clear: both;
 }
 
 .nav-2 {
     margin-top: 192px;
-    clear: right;
+    clear: both;
     float: right;
 }
 
-.nav-2 .link {
+.nav-2 a {
     text-decoration: none;
     box-sizing: content-box;
     padding: 5px 16px 5px;
@@ -107,8 +106,8 @@ body {
     font-weight: bold;
 }
 
-.nav-2 .link-1,
-.nav-2 .link:hover {
+.nav-2 .active,
+.nav-2 a:hover {
     background: white;
     color: #2faed8;
     border-bottom: 1px solid white;
@@ -120,6 +119,10 @@ body {
     margin-bottom: 70px;
 }
 
+.module--side-panel {
+    margin-bottom: 10px;
+}
+
 .content:after {
     content: '';
     display: block;
@@ -128,19 +131,11 @@ body {
 
 /*------------------------------- Column--left */
 
-.column--left {
-    width: 211px;
-}
-
 .nav-3 {
-    width: 200px;
     border: 1px solid #d8d8d8;
     border-radius: 5px;
     background-color: #ececec;
-}
-
-.nav-3 {
-    padding: 10px 15px 0 15px;
+    padding: 10px 95px 0 15px;
     font-size: 14px;
     font-weight: bold;
 }
@@ -169,8 +164,7 @@ body {
 /*-------- Module: About-company */
 
 .module--about-company {
-    border-bottom: 1px dotted #a1a1a1;
-    margin-bottom: 5px;
+    margin-bottom: 32px;
 }
 
 .module--about-company a {
@@ -185,31 +179,29 @@ body {
 
 .module--about-company p {
     font-size: 15px;
-    margin-bottom: 35px;
-}
-
-.module--about-company:after {
-    content: '';
-    display: block;
-    clear: both;
 }
 
 /*-------- Module: Our profile */
 
-.development {
-    width: 267px;
-    float: left;
-    margin-right: 16px;
+.module--our-profile {
+    margin: 0 0 23px 0;
 }
 
-.development h3 {
+.item {
+    width: 267px;
+    float: left;
+}
+
+
+
+.item h3 {
     border-bottom: 1px solid #d8d8d8;
     margin-bottom: 1px;
     color: #2faed8;
     padding: 2px 0;
 }
 
-.development .text {
+.item .text {
     background: linear-gradient(180deg, #f3f3f3, white);
     padding: 8px 12px 0 7px;
     line-height: 165%;
@@ -217,22 +209,33 @@ body {
     font-size: 13px;
 }
 
-.development a {
+.item a {
     width: 90px;
-    background: url("../img/doublearrow.gif.") 80px 7px no-repeat;
+    background: url("../img/doublearrow.gif") 80px 7px no-repeat;
     display: block;
     margin-left: 155px;
-    margin-bottom: 23px;
     border-bottom: none;
     color: #2faedc;
+    text-decoration: none;
 }
 
-.development a:hover {
+.item a:hover {
     background-position: 80px -8px;
     color: inherit;
 }
 
+.item:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 /*-------- Module: Featured-project */
+
+.module--featured-project {
+    border-top: 1px dashed #a1a1a1;
+    clear: both;
+}
 
 .module--featured-project h3 {
     font-size: 12px;
@@ -268,10 +271,6 @@ body {
 
 /*------------------------------- Column--right*/
 
-.column--right {
-    width: 209px;
-}
-
 .column--right p {
     margin-bottom: 15px;
 }
@@ -279,7 +278,7 @@ body {
 .column--right {
     padding: 10px 10px 0 15px;
     color: #6b6b6b;
-    width: 200px;
+    width: 195px;
     border: 1px solid #d8d8d8;
     border-radius: 5px;
     background-color: #ececec;
