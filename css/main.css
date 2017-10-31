@@ -30,19 +30,29 @@ body {
     box-shadow: 0 0 10px 0 #afafaf;
 }
 
-.module {
-    margin-left: 13px;
+.column {
     float: left;
+    margin-left: 10px;
 }
 
 /*----------------------------------------------------------------------- Header */
+
+.header {
+    height: 265px;
+    background: url("../img/ribbon.jpg") 0 98px no-repeat;
+    margin-bottom: 20px;
+}
 
 .logo {
     margin: 24px 0 30px 48px;
     display: inline-block;
 }
 
-.ref {
+.nav-1 {
+    float: right;
+}
+
+.nav-1 .ref {
     height: 15px;
     float: right;
     margin-top: 36px;
@@ -52,39 +62,39 @@ body {
     color: inherit;
 }
 
-.ref--home {
+.nav-1 .ref--home {
     width: 52px;
     background: url("../img/home.gif") 0 3px no-repeat;
 }
 
-.ref--contacts {
+.nav-1 .ref--contacts {
     width: 68px;
     background: url("../img/contacts.gif") 0 5px no-repeat;
-
 }
 
-.ref--home:hover {
+.nav-1 .ref--home:hover {
     background-position: 0 -14px;
     color: #2faed8;
 }
 
-.ref--contacts:hover {
+.nav-1 .ref--contacts:hover {
     background-position: 0 -12px;
     color: #2faed8;
 }
 
-.ribbon {
-    height: 167px;
-    background: url("../img/ribbon.jpg");
-    margin-bottom: 20px;
+.nav-1:after {
+    content: '';
+    display: block;
+    clear: right;
 }
 
-.nav {
+.nav-2 {
+    margin-top: 192px;
+    clear: right;
     float: right;
-    margin-top: 145px;
 }
 
-.nav a {
+.nav-2 .link {
     text-decoration: none;
     box-sizing: content-box;
     padding: 5px 16px 5px;
@@ -97,7 +107,8 @@ body {
     font-weight: bold;
 }
 
-.nav a:hover {
+.nav-2 .link-1,
+.nav-2 .link:hover {
     background: white;
     color: #2faed8;
     border-bottom: 1px solid white;
@@ -115,22 +126,26 @@ body {
     clear: both;
 }
 
-/*------------------------------- Module: Content-nav */
+/*------------------------------- Column--left */
 
-.module--content-nav {
+.column--left {
+    width: 211px;
+}
+
+.nav-3 {
     width: 200px;
     border: 1px solid #d8d8d8;
     border-radius: 5px;
     background-color: #ececec;
 }
 
-.module--content-nav {
+.nav-3 {
     padding: 10px 15px 0 15px;
     font-size: 14px;
     font-weight: bold;
 }
 
-.module--content-nav a {
+.nav-3 a {
     background: url("../img/square.gif") 0 8px no-repeat;
     text-decoration: none;
     color: inherit;
@@ -139,87 +154,47 @@ body {
     display: block;
 }
 
-.module--content-nav a:hover {
+.nav-3 a:hover {
     color: #2faed8;
     background: url("../img/arrow.gif") 0 7px no-repeat;
 }
 
-/*------------------------------- Module: Communications */
+/*------------------------------- Column--center */
 
-.module--communications p {
-    margin-bottom: 15px;
-}
-
-.module--communications {
-    padding: 10px 10px 0 15px;
-    color: #6b6b6b;
-    width: 200px;
-    border: 1px solid #d8d8d8;
-    border-radius: 5px;
-    background-color: #ececec;
-}
-
-.link {
-    color: #2faedc;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.link--cover {
-    background: url("../img/cover.gif") 0 -15px no-repeat;
-    padding-left: 25px;
-}
-
-.link--cover:hover {
-    background-position: 0 3px;
-}
-
-.link--phone {
-    background: url("../img/phone.gif") 0 -25px no-repeat;
-    padding: 5px 0 10px 25px;
-}
-
-.link--phone:hover {
-    background-position: 0 5px;
-}
-
-/*------------------------------- Module: Article */
-
-.module--article {
+.column--center {
     width: 567px;
     padding-top: 10px;
 }
 
-/*-------- about-company */
+/*-------- Module: About-company */
 
-.about-company {
+.module--about-company {
     border-bottom: 1px dotted #a1a1a1;
     margin-bottom: 5px;
 }
 
-.about-company a {
+.module--about-company a {
     text-decoration: none;
     border-bottom: 1px dashed;
     color: #2faed8;
 }
 
-.about-company a:hover {
+.module--about-company a:hover {
     border: none;
 }
 
-.about-company p {
+.module--about-company p {
     font-size: 15px;
     margin-bottom: 35px;
 }
 
-.about-company:after {
+.module--about-company:after {
     content: '';
     display: block;
     clear: both;
 }
 
-/*-------- development */
+/*-------- Module: Our profile */
 
 .development {
     width: 267px;
@@ -249,6 +224,7 @@ body {
     margin-left: 155px;
     margin-bottom: 23px;
     border-bottom: none;
+    color: #2faedc;
 }
 
 .development a:hover {
@@ -256,9 +232,9 @@ body {
     color: inherit;
 }
 
-/*-------- featured-project */
+/*-------- Module: Featured-project */
 
-.featured-project h3 {
+.module--featured-project h3 {
     font-size: 12px;
     color: #2faed8;
     margin-bottom: 23px;
@@ -290,6 +266,50 @@ body {
     clear: both;
 }
 
+/*------------------------------- Column--right*/
+
+.column--right {
+    width: 209px;
+}
+
+.column--right p {
+    margin-bottom: 15px;
+}
+
+.column--right {
+    padding: 10px 10px 0 15px;
+    color: #6b6b6b;
+    width: 200px;
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    background-color: #ececec;
+}
+
+.nav-4 .link {
+    color: #2faedc;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.nav-4 .link--cover {
+    background: url("../img/cover.gif") 0 -15px no-repeat;
+    padding-left: 25px;
+}
+
+.nav-4 .link--cover:hover {
+    background-position: 0 3px;
+}
+
+.nav-4 .link--phone {
+    background: url("../img/phone.gif") 0 -25px no-repeat;
+    padding: 5px 0 10px 25px;
+}
+
+.nav-4 .link--phone:hover {
+    background-position: 0 5px;
+}
+
 /*----------------------------------------------------------------------- Footer */
 
 .footer {
@@ -314,17 +334,17 @@ body {
     font-size: 15px;
 }
 
-/*-------- Footer-nav */
+/*-------- nav-5 */
 
-.footer-nav {
+.nav-5 {
     float: right;
 }
 
-.footer-nav a {
+.nav-5 a {
     color: inherit;
     text-decoration: none;
 }
 
-.footer-nav a:hover {
+.nav-5 a:hover {
     text-decoration: underline;
 }
