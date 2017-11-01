@@ -8,33 +8,84 @@
 </head>
 
 <body>
+    <div class="page page--contact-us">
+        <div class="header">
+            <a class="logo" href="about_us.htm"><img src="img/logo.gif" alt="Логотип компании"></a>
+            <div class="nav-1">
+                <a class="ref ref--contacts" href="#">Contacts</a>
+                <a class="ref ref--home" href="#">Home</a>
+            </div>
+            <div class="nav-2">
+                <a href="about_us.htm">About us</a>
+                <a href="our_advantages.htm">Our advantages</a>
+                <a class="active" href="contact_us.htm">Contact us</a>
+                <a href="faq.htm">FAQ</a>
+            </div>
+        </div>
 
-    Home
-    Contacts
+        <div class="content">
+            <div class="column column--left">
+                <div class="nav-3">
+                    <a href="#">Our works</a>
+                    <a href="#">Prices</a>
+                    <a href="#">Portfolio</a>
+                </div>
+            </div>
 
-    About us
-    Our advantages
-    Contact us
-    FAQ
+            <div class="column column--center">
+                <div class="module--our-advantages">
+                    <h2>Request Form</h2>
+                    <form action="#" method="post">
 
-    Our works
-    Prices
-    Portfolio
+                        <div class="field field--name required">
+                            <label> Name:</label>
+                            <input name="name" type="text">
+                        </div>
 
-    Contact us to discuss how we can help you
-    Contact Us
-    Call Us
+                        <div class="field field--email required">
+                            <label> E-mail:</label>
+                            <input name="email" type="email">
+                        </div>
 
-    Request Form
-    * Name:
-    * E-mail:
-    * Request description:
-    File:
-    * Security Code:
-    Send
+                        <div class="field field--message required">
+                            <label> Request description:</label>
+                            <textarea name="message" rows="9" cols="37"></textarea>
+                        </div>
 
-    &copy; 2007-2008 AirBionic. All rights reserved.
-    <a href="#">Company</a> | <a href="#">Portfolio</a> | <a href="#">Contacts</a> | <a href="#">Some thing</a>
+                        <div class="field field--file">
+                            <label>File:</label>
+                            <input name="file" type="file">
+                        </div>
 
+                        <img src="img/figures.gif">
+
+                        <div class="field field--security required" >
+                            <label> Security Code:</label>
+                            <input name="Security Code" type="text">
+                        </div>
+
+                        <div class="actions">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="column column--right">
+                <div class="nav-4">
+                    <p>Contact us to discuss how we can help you</p>
+                    <a class="link link--cover" href="#">Contact Us</a>
+                    <a class="link link--phone" href="#">Call Us</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="nav-5">
+                <a href="#">Company</a> | <a href="#">Portfolio</a> | <a href="#">Contacts</a> | <a href="#">Some thing</a>
+            </div>
+            <p>&copy; 2007-2008 AirBionic. All rights reserved.</p>
+        </div>
+    </div>
 </body>
 </html>
