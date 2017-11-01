@@ -432,23 +432,23 @@ button {
     background: url("../img/TM.gif") 30px 28px no-repeat #eeeeee;
     padding: 15px 28px 0 75px;
     border-top: 1px solid #d4d4d4;
-}
 
-.footer p {
-    color: #2faedc;
-    margin-top: 20px;
-    font-size: 15px;
-}
+    p {
+        color: #2faedc;
+        margin-top: 20px;
+        font-size: 15px;
+    }
 
-.nav-5 {
-    float: right;
-}
+    .nav-5 {
+        float: right;
+    }
 
-.nav-5 a {
-    color: inherit;
-    text-decoration: none;
-}
+    .nav-5 a {
+        color: inherit;
+        text-decoration: none;
+    }
 
-.nav-5 a:hover {
-    text-decoration: underline;
+    .nav-5 a:hover {
+        text-decoration: underline;
+    }
 }
