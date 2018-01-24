@@ -352,6 +352,12 @@ button {
 
     dt {
         padding: 0 5px 0 30px;
+
+        &:hover {
+            cursor: pointer;
+            color: #2faed8;
+            text-decoration: underline;
+        }
     }
 
     dd {
